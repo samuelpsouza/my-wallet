@@ -3,5 +3,7 @@
   (:require [mywallet.model :as mw.model])
   (:require [mywallet.menu :as mw.menu]))
 
+(println "Initializing system...")
+
 (mw.menu/menu {:prompt "What do you want to do?"
-       :options ["Add new bank account" "Add new credit card" {:id "o" :text "Other"}]})
+               :options ["Add new bank account" "Add new credit card" {:id "o" :text "Other"}]})
